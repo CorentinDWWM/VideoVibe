@@ -1,0 +1,11 @@
+@use "./assets/styles/mixins" as mixin;
+
+.appContainer {
+  min-height: 100vh;
+}
+
+.page {
+  @include mixin.md {
+    flex-direction: column-reverse;
+  }
+}

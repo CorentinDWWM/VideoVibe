@@ -1,0 +1,36 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.header {
+  position: relative;
+  padding: 10px 20px;
+  height: 58px;
+  background-color: var(--bg-nav);
+  box-shadow: var(--box-shadow-nav);
+  color: var(--primary);
+  img {
+    width: 130px;
+    cursor: pointer;
+  }
+}
+
+.headerList {
+  display: flex;
+  align-items: center;
+  @include mixin.md {
+    display: none;
+  }
+}
+
+.mobileHeader {
+  font-size: 2.2rem;
+  display: none;
+  cursor: pointer;
+  color: var(--secondary);
+  &:hover {
+    opacity: 0.8;
+  }
+  @include mixin.md {
+    display: block;
+    font-size: 1.8rem;
+  }
+}

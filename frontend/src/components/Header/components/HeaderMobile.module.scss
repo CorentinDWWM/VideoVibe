@@ -1,0 +1,22 @@
+.container {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: var(--bg-blue);
+  border: 2px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--secondary);
+    &:hover {
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+  }
+}
